@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    // IMPORTANT: Make sure `paths` matches `alias` in `vite.config.ts`.
+    // Paths allows you to use `@/components` etc.
+    ,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "isolatedModules": true,
+    ,
+    "noEmit": true,
+    ,
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "types", ".eslintrc.cjs", "vite.config.ts"],
+  "references": [{"path": "./tsconfig.node.json"}]
+}
